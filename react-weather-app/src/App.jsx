@@ -2,17 +2,43 @@ import React from "react";
 import Weather from "./Weather";
 import "./App.css";
 
-function App() {
+export default function App() {
+  return (
     <div className="App">
-        <div className="container">
-            <h1>Weather App</h1>
-            <Weather />
-            <footer>
-                This project was coded by Asanda Mhlongo and is open-sorced on GitHub.
-            </footer>
-        </div>
-    </div>
-  
-}
+      <div className="container">
+        <Weather defaultCity="New York" />
 
-export default App
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Asanda Mhlongo
+          </a>{" "}
+          and is{" "}
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
+    </div>
+  );
+}
+  
+
+
+
